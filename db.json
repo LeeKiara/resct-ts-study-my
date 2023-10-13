@@ -1,0 +1,58 @@
+{
+  "todos": [
+    {
+      "id": 1,
+      "memo": "React 스터디"
+    },
+    {
+      "memo": "axios 스터디",
+      "id": 2
+    },
+    {
+      "memo": "swr 스터디",
+      "id": 3
+    },
+    {
+      "memo": "hard study",
+      "id": 4
+    },
+    {
+      "memo": "new study",
+      "id": 5
+    },
+    {
+      "memo": "aaa",
+      "id": 6
+    }
+  ],
+  "contacts": [
+    {
+      "id": 1,
+      "name": "Alice",
+      "phone": "010-1234-5678"
+    },
+    {
+      "name": "John",
+      "phone": "010-",
+      "id": 2
+    },
+    {
+      "name": "1",
+      "phone": "1",
+      "isChecked": true,
+      "id": 3
+    },
+    {
+      "name": "2",
+      "phone": "2",
+      "isChecked": true,
+      "id": 4
+    },
+    {
+      "name": "3",
+      "phone": "3",
+      "isChecked": true,
+      "id": 5
+    }
+  ]
+}

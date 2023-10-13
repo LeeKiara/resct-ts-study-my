@@ -1,0 +1,43 @@
+{
+  "compilerOptions": {
+    // ts 컴파일 후 출력 결과물이 저장되는 위치
+    "outDir": "./dist",
+    // 모듈방식(es, export/import)
+    "module": "ESNext",
+    // ts를 js로 컴파일한 후 결과 버전
+    "target": "ES2020",
+    // ts에서 사용할 기본 js 라이브러리
+    "lib": ["ESNext", "DOM"],
+    // ts에서 js코드를 쓸수있는 여부
+    "allowJs": true,
+    // jsx라고 문법을 처리하는 방법(js로 변환했을때)
+    // javascript Virtual DOM 객체를 HTML 처럼 표기하는 방법
+    // ** esbuild-loader쓸때는 영향을 안받음
+    // "jsx": "react-jsx"
+
+    // jsx-transpile: React import를 안해도 되게 하는 방법
+    // 어디까지나 컴포너트 코드에 대한 얘기고
+    // 어디선가 글로벌 수준에 React import를 해야 함
+    "jsx": "preserve",   
+    // emotion 사용에 필요
+    "moduleResolution": "node",
+    // "moduleResolution": "NodeNext" 
+    "plugins": [
+      {
+        "name": "@styled/typescript-styled-plugin",
+        "lint": {
+          "validProperties": [
+            "label"
+          ]
+        }
+      }
+    ],
+    // 초기위치(tsconfig.json 위치, 프로젝트 최상단)
+    "baseUrl": ".",
+    // 경로의 alias 추가
+    "paths": {
+      "@/*": ["src/*"]
+    }
+  }
+
+}
